@@ -3,7 +3,7 @@ import {Application} from 'stimulus';
 import {definitionsFromContext} from 'stimulus/webpack-helpers';
 import TabsController from 'stimulus-tabs';
 
-import "../styles/index.scss"
+import ';../styles/index.scss';
 
 const application = Application.start();
 application.register('tabular', TabsController);
