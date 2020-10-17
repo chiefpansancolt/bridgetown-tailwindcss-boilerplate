@@ -38,8 +38,15 @@ GEM
       terminal-table (~> 1.8)
       thor (~> 1.0)
       tilt (~> 2.0)
+    bridgetown-inline-svg (1.1.1)
+      bridgetown (>= 0.15, < 2.0)
+      svg_optimizer (~> 0.2.5)
     bridgetown-paginate (0.17.1)
       bridgetown-core (= 0.17.1)
+    bridgetown-quick-search (1.0.3)
+      bridgetown (>= 0.15.0.beta1, < 2.0)
+    bridgetown-seo-tag (3.0.5)
+      bridgetown (>= 0.15.0, < 2.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     erubi (1.9.0)
@@ -66,8 +73,11 @@ GEM
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    mini_portile2 (2.4.0)
     minitest (5.14.2)
     multipart-post (2.1.1)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
@@ -78,6 +88,8 @@ GEM
     rouge (3.24.0)
     ruby2_keywords (0.0.2)
     safe_yaml (1.0.5)
+    svg_optimizer (0.2.5)
+      nokogiri
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thor (1.0.1)
@@ -92,7 +104,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bridgetown (~> 0.17.1)
+  bridgetown
+  bridgetown-inline-svg
+  bridgetown-quick-search
+  bridgetown-seo-tag
 
 BUNDLED WITH
    2.1.4
