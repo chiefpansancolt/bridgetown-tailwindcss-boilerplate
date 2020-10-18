@@ -2,6 +2,10 @@
 layout: default
 ---
 
-<h1>Home Page</h1>
+<div class="">
+    {% render "shared/navbar", metadata: site.metadata, navigation: site.data.navigation.main, profile: site.data.navigation.profile, page: page %}
+</div>
 
-{{ content }}
+<main>
+    {{ content }}
+</main>

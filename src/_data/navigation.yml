@@ -1,0 +1,57 @@
+main:
+  - name: Home
+    link: /
+    first: true
+  - name: Team
+    link: /team
+    first: false
+  - name: Projects
+    link: /project
+    first: false
+  - name: Calendar
+    link: /calendar
+    first: false
+profile:
+  - name: Your Profile
+    link: /profile
+  - name: Settings
+    link: /settings
+  - name: Sign Out
+    link: /signout
+footer:
+  column_one:
+    - name: Marketing
+      link: /marketing
+    - name: Analytics
+      link: /analytics
+    - name: Commerce
+      link: /commerce
+    - name: Insights
+      link: /insights
+  column_two:
+    - name: Pricing
+      link: /pricing
+    - name: Documentation
+      link: /documentation
+    - name: Guides
+      link: /guides
+    - name: API Status
+      link: /apistatus
+  column_three:
+    - name: About
+      link: /about
+    - name: Blog
+      link: /blog
+    - name: Jobs
+      link: /jobs
+    - name: Press
+      link: /press
+    - name: Partners
+      link: /partners
+  column_four:
+    - name: Claim
+      link: /claim
+    - name: Privacy
+      link: /privacy
+    - name: Terms
+      link: /terms
