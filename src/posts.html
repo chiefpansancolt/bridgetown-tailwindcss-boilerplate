@@ -1,0 +1,45 @@
+---
+layout: page
+title: From the blog
+subtitle: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
+permalink: /blog/
+pagination:
+  enabled: true
+---
+
+<div class="relative bg-gray-50 pb-20 pt-2 px-4 sm:px-6 lg:pt-2 lg:pb-28 lg:px-8">
+    <div class="relative max-w-7xl mx-auto">
+        <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+            {% for post in site.posts %}
+                {% render "cards/post_tile", post: post %}
+            {% endfor %}
+            <div>
+            {% if paginator.total_pages > 1 %}
+            <nav class="px-4 py-3 flex items-center justify-between sm:px-6">
+                <div class="flex-1 flex justify-between sm:justify-end">
+                {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path }}" class="relative inline-flex items-center px-4 py-2 bg-secondary text-sm leading-5 text-gray-50 font-medium rounded-md transition ease-in-out duration-150">
+                        Previous
+                    </a>
+                {% else %}
+                    <button disabled class="relative inline-flex items-center px-4 py-2 bg-secondary text-sm leading-5 font-medium rounded-md text-gray-50 opacity-50 cursor-not-allowed">
+                        Previous
+                    </button>
+                {% endif %}
+                
+                {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path }}" class="ml-3 relative inline-flex items-center px-4 py-2 bg-secondary hover:bg-accent text-sm leading-5 font-medium rounded-md text-gray-50 transition ease-in-out duration-150">
+                        Next
+                    </a>
+                {% else %}
+                    <button disabled class="ml-3 relative inline-flex items-center px-4 py-2 bg-secondary text-sm leading-5 font-medium rounded-md text-gray-50 opacity-50 cursor-not-allowed">
+                        Next
+                    </button>
+                {% endif %}
+                </div>
+            </nav>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
