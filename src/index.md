@@ -4,4 +4,6 @@
 layout: home
 ---
 
-Welcome to Bridgetown!
+<main>
+    Welcome to Bridgetown!
+</main>
