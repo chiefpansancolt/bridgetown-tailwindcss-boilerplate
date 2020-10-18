@@ -1629,7 +1629,7 @@ braces@^3.0.1, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-bridgetown-quick-search@^1.0.3:
+bridgetown-quick-search@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/bridgetown-quick-search/-/bridgetown-quick-search-1.0.3.tgz#4fc34dea418fc97ba25f7ccf1aea6cbc7c048d91"
   integrity sha512-IAeldS+EB+AU/3MIr0jvQKBIPR852aRxlM38/cEcs4KDh3v9ML3CtgnCI+48V6UBDb3NFzlKEJ91SSxRz3lyiA==
